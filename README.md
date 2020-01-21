@@ -1,5 +1,2 @@
 # MinMaxOthello
-MinMax algorithm for Othello game coded in C language. 
-All comments are in French.
-Compliation file : Makefile
-Execution file:  Othello 
+To make the automatic player i used the classic MinMax algorithm in game theory which applies perfectly to Othello. This algorithm consists in minimizing the losses in the worst case and it presupposes that the opponent seeks to play in a way to maximize his gains. Applied to a game tree of depth 1 Select the move that will maximize our winnings (exclusively for this move). For a depth2 the algorithm will select the box which will minimize losses regardless of the box played by the opponent on the next stroke. Thus the algorithm will alternate the search for the maximum gain for the levels of the tree corresponding to a player's stroke and to minimize this value for the others because this minimum gain corresponds to the maximum gain for his opponent. By convention the gains will be counted Positively for the BLACK player and negatively for the WHITE.
